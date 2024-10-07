@@ -137,26 +137,31 @@ df.skew()
 df["Highly Positive Skew"]=np.log(df["Highly Positive Skew"])
 df
 ~~~
-![image](https://github.com/user-attachments/assets/dee0c7ed-7b10-4a24-9d48-e79f22408bd9)
+![image](https://github.com/user-attachments/assets/df60af58-d4e0-4779-8a90-22719315d588)
+
 ~~~
 
 df["Moderate Positive Skew"]=np.reciprocal(df["Moderate Positive Skew"])
 df
 ~~~
-![image](https://github.com/user-attachments/assets/80cea5a8-90af-483d-96da-d4885e3ce51d)
+![image](https://github.com/user-attachments/assets/e879686e-29b6-4e76-bb5b-59d791e6c666)
+
 ~~~
 
 df["Highly Positive Skew"]=np.sqrt(df["Highly Positive Skew"])
 df
 ~~~
-![image](https://github.com/user-attachments/assets/bd27d8bf-adba-43ac-94e8-4517ac6c8c6d)
+![image](https://github.com/user-attachments/assets/c792bdcf-8ceb-4e94-9549-ba3414a8b533)
+
 ~~~
 
 
 df["Highly Positive Skew"]=np.square(df["Highly Positive Skew"])
 df
 ~~~
-![image](https://github.com/user-attachments/assets/e0e689e3-0ec0-4df8-ac33-539f2a0bd0e9)
+![image](https://github.com/user-attachments/assets/58e66009-ddc0-480e-9fec-fa1ed23daedd)
+~~~
+
 
 ## Power transformation
 ~~~
@@ -164,14 +169,15 @@ df
 df["Highly Positive Skew"],parameter=stats.boxcox(df["Highly Positive Skew"])
 df
 ~~~
-![image](https://github.com/user-attachments/assets/b4678dc8-e6dd-463c-83dd-a5cf369068b8)
+![image](https://github.com/user-attachments/assets/b1df3e56-9ae3-4aca-9a18-a44d4a77c875)
+
 
 ~~~
 
 df["Moderate Negative Skew_yeojohnson"],parameter=stats.yeojohnson(df["Moderate Negative Skew"])
 df
 ~~~
-![image](https://github.com/user-attachments/assets/9dd956c8-50c4-48b9-bcb3-c26f2ffba646)
+
 ~~~
 
 import seaborn as sns
@@ -180,13 +186,15 @@ import matplotlib.pyplot as plt
 sm.qqplot(df["Moderate Negative Skew"],line='45')
 plt.show()
 ~~~
-![image](https://github.com/user-attachments/assets/6c352f50-1c38-438f-b362-3ad46017de45)
+![image](https://github.com/user-attachments/assets/60d2f715-d462-4844-8fe1-15c5bb00562a)
+
 ~~~
 
 sm.qqplot(np.reciprocal(df["Moderate Negative Skew"]),line='45')
 plt.show()
 ~~~
-![image](https://github.com/user-attachments/assets/bc0c50a3-c316-44ab-8629-af2636dcf7e0)
+![image](https://github.com/user-attachments/assets/9b99332b-ccca-410b-9215-845473e66227)
+
 ~~~
 
 from sklearn.preprocessing import QuantileTransformer
@@ -195,8 +203,8 @@ df["Moderate Negative Skew"]=qt.fit_transform(df[["Moderate Negative Skew"]])
 sm.qqplot(df["Moderate Negative Skew"],line='45')
 plt.show()
 ~~~
-![image](https://github.com/user-attachments/assets/064615ca-03fb-45d8-8471-68cbb9f027d2)
-~~~
+![image](https://github.com/user-attachments/assets/db91b2f0-8fd3-4f21-8e61-0a0c6348186e)
+
 
 
 
@@ -227,9 +235,9 @@ plt.show()
 
    
 ## RESULT:
-~~~
+
    Thus,the given data are read and Feature Encoding and Transformation process are performed and the data is saved to the file.
-~~~
+
 
 
 
