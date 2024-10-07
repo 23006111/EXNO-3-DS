@@ -131,6 +131,7 @@ df
 ![image](https://github.com/user-attachments/assets/24efa980-30b1-42fb-9f73-8da50dfef9f3)
 ~~~
 df.skew()
+~~~
 ![image](https://github.com/user-attachments/assets/f41b15b4-a970-413f-9f4d-fec37fda8f54)
 ~~~
 
@@ -205,7 +206,7 @@ plt.show()
 ~~~
 ![image](https://github.com/user-attachments/assets/db91b2f0-8fd3-4f21-8e61-0a0c6348186e)
 
-
+~~~
 
 
 
