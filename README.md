@@ -161,7 +161,7 @@ df["Highly Positive Skew"]=np.square(df["Highly Positive Skew"])
 df
 ~~~
 ![image](https://github.com/user-attachments/assets/58e66009-ddc0-480e-9fec-fa1ed23daedd)
-~~~
+
 
 
 ## Power transformation
@@ -178,6 +178,7 @@ df
 df["Moderate Negative Skew_yeojohnson"],parameter=stats.yeojohnson(df["Moderate Negative Skew"])
 df
 ~~~
+![image](https://github.com/user-attachments/assets/46d51be5-9c1e-4b9c-9e0f-cadd66213ffa)
 
 ~~~
 
@@ -206,7 +207,7 @@ plt.show()
 ~~~
 ![image](https://github.com/user-attachments/assets/db91b2f0-8fd3-4f21-8e61-0a0c6348186e)
 
-~~~
+
 
 
 
